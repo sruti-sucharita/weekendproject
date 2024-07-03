@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weekend Project - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="stylesresponsiveness.css">
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <a href="mainpage.html" class="active">Home</a>
+      </div>
+      <div class="right">
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div id="contact-us">
+        <h3>CONTACT US PAGE:</h3>
+        <div class="header">
+          <div>
+            <img src="W3Schools_logo.svg.png" alt="logo" />
+            <p>W3Schools<br>Happy Coding :)</p>
+          </div>
+          <div>
+            <p>For Further Queries!!<br>Reach Out To Us: 6548965210</p>
+          </div>
+        </div>
+        <div class="content">
+          <p>W3Schools, established in 1998, is a widely-used online platform offering comprehensive tutorials and references for web development technologies such as HTML, CSS, JavaScript, PHP, SQL, Python, and more. Known for its user-friendly and interactive learning approach, W3Schools provides a “Try it Yourself” editor that allows users to experiment with code directly in their browsers. The platform is designed to cater to both beginners and experienced developers, offering free access to most of its resources, including thousands of code examples and detailed references. Additionally, W3Schools offers paid certification to validate users!!</p>
+        </div>
+        <div class="content">
+          <form onsubmit="return submitForm()">
+            <div class="form-group">
+              <label for="name">ENTER NAME:</label>
+              <input type="text" id="name" name="name" placeholder="Eg: John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">ENTER EMAIL:</label>
+              <input type="email" id="email" name="email" placeholder="Eg: JD123@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="genre">FAVOURITE GENRE:</label>
+              <input list="browsers" id="genre" name="genre" required>
+              <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Google Chrome">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist>
+            </div>
+            <div class="form-group">
+              <label for="subscribe">SUBSCRIBE TO OUR WEBSITE VIA EMAIL:</label>
+              <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+            <div class="form-group">
+              <label for="checkbox">Checkbox:</label>
+              <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <div id="error-message" style="color: red;"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        © 2024 w3Schools.com. All rights reserved.
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
+  
