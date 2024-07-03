@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Weekend Project</title>
-    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <title>Weekend Project - Main Page</title>
+    <link rel="stylesheet" type="text/css" href="stylesresponsiveness.css">
   </head>
   <body>
-    <nav id="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact-us">Contact</a>
+    <nav>
+      <div class="left">
+        <a href="#home" class="active">Home</a>
+      </div>
+      <div class="right">
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
+    
     <div class="container">
       <div id="home">
         <div class="header">
@@ -43,65 +46,13 @@
             <p>W3Schools is a comprehensive web development resource offering tutorials, references, and exercises on HTML, CSS, JavaScript, Python, and SQL. It features interactive coding examples, a built-in code editor, and certification programs, making it an essential tool for both beginners and experienced developers to enhance their skills.</p>
           </div>
         </div>
-          <div class="video-container">
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg" title="HTML - Introduction - W3Schools.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-      </div>
-      <div id="contact-us">
-        <h3>CONTACT US PAGE:</h3>
-        <div class="header">
-          <div>
-            <img src="W3Schools_logo.svg.png" alt="logo" />
-            <p>W3Schools<br>Happy Coding :)</p>
-          </div>
-          <div>
-            <p>For Further Queries!!<br>Reach Out To Us: 6548965210</p>
-          </div>
-        </div>
-        <div class="content">
-          <p>W3Schools, established in 1998, is a widely-used online platform offering comprehensive tutorials and references for web development technologies such as HTML, CSS, JavaScript, PHP, SQL, Python, and more. Known for its user-friendly and interactive learning approach, W3Schools provides a “Try it Yourself” editor that allows users to experiment with code directly in their browsers. The platform is designed to cater to both beginners and experienced developers, offering free access to most of its resources, including thousands of code examples and detailed references. Additionally, W3Schools offers paid certification to validate users!!</p>
-        </div>
-        <div class="content">
-          <form id="contactForm" onsubmit="return submitForm()">
-
-            <div class="form-group">
-              <label for="name">ENTER NAME:</label>
-              <input type="text" id="name" name="name" placeholder="Eg: John Doe" required>
-            </div>
-            <div class="form-group">
-              <label for="email">ENTER EMAIL:</label>
-              <input type="email" id="email" name="email" placeholder="Eg: JD123@gmail.com" required>
-            </div>
-            <div class="form-group">
-              <label for="genre">FAVOURITE GENRE:</label>
-              <input list="browsers" id="genre" name="genre" required>
-              <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Google Chrome">
-                <option value="Opera">
-                <option value="Safari">
-              </datalist>
-            </div>
-            <div class="form-group">
-              <label for="subscribe">SUBSCRIBE TO OUR WEBSITE VIA EMAIL:</label>
-              <input type="checkbox" id="subscribe" name="subscribe">
-            </div>
-            <div class="form-group">
-              <label for="checkbox">Checkbox:</label>
-              <input type="checkbox" id="checkbox" name="checkbox">
-            </div>
-            <div>
-              <button type="submit">Submit</button>
-            </div>
-          </form>
-          <div id="error-message" style="color: red;"></div>
+        <div class="video-container">
+          <iframe width="1175" height="450" src="https://www.youtube.com/embed/it1rTvBcfRg" title="HTML - Introduction - W3Schools.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     <footer>
       © 2024 w3Schools.com. All rights reserved.
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
