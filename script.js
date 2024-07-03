@@ -1,16 +1,11 @@
 function submitForm() {
-  // Get form field values
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
-
-  // Check if all required fields are filled
-  if (name === "" || email === "" || message === "") {
-    window.alert("Please fill in all required fields.");
-    return false; // Prevent form submission
+  const name = document.getElementById('name').value;
+  const errorMessage = document.getElementById('error-message');
+  if (!name) {
+    errorMessage.textContent = 'Please fill out the required field.';
+    return false;
   }
-
-  // If all fields are filled, submit the form
-  window.alert("Form Submitted Successfully");
-  return true; // Allow form submission
+  errorMessage.textContent = ''; // Clear any previous error messages
+  alert('Form submitted successfully!');
+  return true;
 }
